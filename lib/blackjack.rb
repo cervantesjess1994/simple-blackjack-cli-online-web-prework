@@ -1,16 +1,13 @@
-"require 'pry"
-
 def Welcome
   puts "Welcome to the Blackjack Table"
 end
 
 def deal_card
-  total = 0
-  total += rand(1..11)
+  card = rand(1..11)
   end
 
-def display_card_total(sum)
-     puts "Your cards add up to #{sum}."
+def display_card_total(card_total)
+     puts "Your cards add up to #{card_total}."
 end
 
 def prompt_user
@@ -18,8 +15,7 @@ def prompt_user
   end
 
 def get_user_input
-  input = gets.chomp
-  return input
+  user_input = gets.chomp
 end
 
 def end_game(total)
